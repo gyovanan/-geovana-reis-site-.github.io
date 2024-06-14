@@ -1,0 +1,109 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #d7a0ff;
+    margin: 0;
+    padding: 0;
+    color: #1e053c;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#bio {
+    font-size: 14px;
+}
+
+.galeria-imagens img {
+    display: none;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.galeria-imagens img.active {
+    display: block;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+#selecione-seu-carro li p {
+    font-size: 20px;
+}
+
+.youtube-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.detalhes-carro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end; 
+    align-items: flex-start;
+}
+
+.info {
+    text-align: left;
+    flex: 3;
+    order: 1; 
+}
+
+.galeria-imagens {
+    flex: 2;
+    text-align: right;
+    order: 2; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    width: 200px;
+    height: auto; 
+    object-fit: cover;
+}
+
+.galeria-imagens img.active,
+.imagens-secundarias img.active {
+    display: block; 
+}
+
+.favorito {
+    border: none;
+    background: none;
+    font-size: 2em; 
+    color: transparent; 
+    text-shadow: 0 0 2px #ffffff; 
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.favorito:active {
+    color: #f00;
+}
+
+.favorito.favoritado i {
+    color: red;
+}
+
+footer img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 0%; 
+    margin-right: 15px; 
+}
+
+footer a {
+    display: inline-block; 
+    width: 24px; 
+    text-align: center; 
+    margin-right: 20px; 
+}
+.carro {
+    margin-left: 10%; /* Ajuste este valor conforme necessário */
+}
+
+

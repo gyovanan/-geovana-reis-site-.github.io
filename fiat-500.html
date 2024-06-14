@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiat 500</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <h1>Fiat 500</h1>
+    <div class="detalhes-carro">
+        <div class="info">
+            <h2>Especificações Técnicas</h2>
+            <ul>
+                <li><strong>Motorização:</strong> 1.4 L Turbo</li>
+                <li><strong>Combustível:</strong> Gasolina</li>
+                <li><strong>Potência (cv):</strong> 135 @ 5500 RPM</li>
+                <li><strong>Torque (kgf.m):</strong> 150 @ 2400 RPM</li>
+                <li><strong>Transmissão:</strong> Manual de 5 velocidades</li>
+                <li><strong>Consumo cidade (km/l):</strong> 28</li>
+                <li><strong>Consumo estrada (km/l):</strong> 33</li>
+                <li><strong>Tanque de combustível:</strong> 10.5 galões</li>
+                <li><strong>Comprimento (cm):</strong> 354.6</li>
+                <li><strong>Largura (cm):</strong> 162.7</li>
+                <li><strong>Altura (cm):</strong> 148.8</li>
+                <li><strong>Distância entre eixos (cm):</strong> 230.0</li>
+                <li><strong>Porta-malas (L):</strong> 30.1 com banco traseiro abaixado</li>
+            </ul>
+            <h2>Segurança</h2>
+            <ul>
+                <li>Airbags frontais</li>
+                <li>Freios ABS</li>
+                <li>Controle de estabilidade</li>
+            </ul>
+            <h2>Conforto</h2>
+            <ul>
+                <li>Ar-condicionado</li>
+                <li>Volante com ajuste de altura</li>
+                <li>Sistema de som com entrada USB</li>
+            </ul>
+        </div>
+        <div class="carro">
+            <div class="galeria-imagens" id="imagens-secundarias">
+                <img src="./img/fiat 500 rosa frontal.jpg" alt="Imagem Principal" id="imagemPrincipal">
+                <img src="./img/fiat 500 rosa frontal.jpg" alt="Imagem 1" onclick="mudarImagemPrincipal(this.src)">
+                <img src="./img/fiat 500 interno.jpg" alt="Imagem 2" onclick="mudarImagemPrincipal(this.src)">
+                <img src="./img/fiat 500 traseira.jpg" alt="Imagem 3" onclick="mudarImagemPrincipal(this.src)">
+            </div>
+            <button class="favorito" onclick="favoritarCarro('Fiat 500')"><i class="fas fa-heart"></i></button>
+            <button class="anterior" onclick="moverCarrossel(-1, 'imagens-secundarias')"><i class="fas fa-arrow-left"></i></button>
+            <button class="proximo" onclick="moverCarrossel(1, 'imagens-secundarias')"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p><em>Imagens meramente ilustrativas.</em></p>
+        <p><strong>© Todos os direitos reservados - Garagem Geo</strong></p>
+    </footer>
+    
+    
+</body>
+</html>
+
